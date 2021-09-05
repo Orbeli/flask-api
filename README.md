@@ -1,4 +1,4 @@
-# Desafio Paschoalotto
+# Projeto de Estudos com Flask, Swagger e Docker
 Projeto criado com o objetivo de criar uma API RESTful em Flask, implementando Swagger e outros recursos que auxiliem o desenvolvimento e facilidade de consumo da API.
 
 ---
