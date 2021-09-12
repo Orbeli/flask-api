@@ -22,7 +22,8 @@ class ProjetoList(Resource):
         else:
             nome = request.json["nome"]
             descricao = request.json["descricao"]
-            novo_projeto = projeto.Projeto(nome, descricao)
+            funcionarios = request.json["funcionarios"]
+            novo_projeto = projeto.Projeto(nome, descricao, funcionarios)
             result = projeto_service.criar_projeto(novo_projeto)
             return make_response(ps.jsonify(result), 201)
 
@@ -46,8 +47,9 @@ class ProjetoDetail(Resource):
         else:
             nome = request.json["nome"]
             descricao = request.json["descricao"]
+            funcionarios = request.json["funcionarios"]
             novo_projeto = projeto.Projeto(nome, descricao)
-            projeto_service.editar_projeto(projeto_bd, novo_projeto)
+            projeto_service.editar_projeto(projeto_bd, novo_projeto, funcionarios)
             projeto_atualizada = projeto_service.listar_projeto_id(id)
             return make_response(ps.jsonify(projeto_atualizada), 200)
 

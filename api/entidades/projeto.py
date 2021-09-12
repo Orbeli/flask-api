@@ -1,8 +1,9 @@
 
 class Projeto():
-    def __init__(self, nome, descricao, ):
+    def __init__(self, nome, descricao):
         self.__nome = nome
         self.__descricao = descricao
+        self.__funcionarios = funcionarios
 
     @property
     def nome(self):
@@ -19,3 +20,11 @@ class Projeto():
     @descricao.setter
     def descricao(self, descricao):
         self.__descricao = descricao
+
+    @property
+    def funcionarios(self):
+        return self.__funcionarios
+
+    @funcionarios.setter
+    def funcionarios(self, funcionarios):
+        self.__funcionarios = funcionarios
