@@ -56,7 +56,7 @@ Exemplos de uso com cURL:
 ---
 ## Metas do Projeto
 Metas que serão realizadas ao longo do desenvolvimento do projeto:
-- [] Desenvolver todos os endpoints da API (CRUD tarefas, projetos e funcionários)
+- [x] Desenvolver todos os endpoints da API (CRUD tarefas, projetos e funcionários)
 - [x] Implementar sistema de versionamento do Banco de Dados
 - [] Implementar [Swagger](https://swagger.io/)
 - [] Implementar [Docker](https://www.docker.com/)
